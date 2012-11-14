@@ -1,0 +1,25 @@
+set ruler
+set number
+set title
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim " ctrlp
+
+set showcmd " Display incomplete commands.
+set showmode " Display the mode you're in.
+
+set smartindent
+
+set colorcolumn=80
+
+" Remember cursor position
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+" Python-specific settings
+" Wrapping and tabs.
+au BufEnter,BufRead *.py set tw=78 ts=4 sw=4 sta et sts=4 ai
+au BufEnter,BufRead *.py let python_highlight_all = 1
