@@ -1,5 +1,7 @@
 [user]
-	name = Cesar Carruitero
-	email = cesar@mozilla.pe
+  name = Cesar Carruitero
+  email = cesar@mozilla.pe
 [color]
-	ui = auto
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
