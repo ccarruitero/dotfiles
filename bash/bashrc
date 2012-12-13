@@ -142,8 +142,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source ~/.rvm/scripts/rvm #charge rvm
 
 # for b2g
-PATH=$PATH:/home/ccarruitero/src-b2g/android-sdk-linux/platform-tools
-export PATH
+PATH=$PATH:$HOME/android-sdk-linux/platform-tools
 
 PATH=$PATH:/home/ccarruitero/src-b2g/B2G/glue/gonk/out/host/linux-x86/bin
 export PATH
