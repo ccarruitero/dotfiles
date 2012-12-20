@@ -23,3 +23,5 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Wrapping and tabs.
 au BufEnter,BufRead *.py set tw=78 ts=4 sw=4 sta et sts=4 ai
 au BufEnter,BufRead *.py let python_highlight_all = 1
+
+call pathogen#infect()
