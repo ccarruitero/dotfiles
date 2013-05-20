@@ -147,5 +147,8 @@ PATH=$PATH:$HOME/android-sdk-linux/platform-tools
 PATH=$PATH:/home/ccarruitero/src-b2g/B2G/glue/gonk/out/host/linux-x86/bin
 export PATH
 
-# import npm modules
-#PATH=$PATH:$HOME/kitsune/node_modules/less/bin
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# nvm
+source ~/.nvm/nvm.sh
