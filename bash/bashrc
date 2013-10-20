@@ -142,13 +142,15 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source ~/.rvm/scripts/rvm #charge rvm
 
 # for b2g
-PATH=$PATH:$HOME/android-sdk-linux/platform-tools
+export PATH=$PATH:$HOME/android-sdk-linux/platform-tools
 
-PATH=$PATH:/home/ccarruitero/src-b2g/B2G/glue/gonk/out/host/linux-x86/bin
-export PATH
+#PATH=$PATH:/home/ccarruitero/src-b2g/B2G/glue/gonk/out/host/linux-x86/bin
+#export PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # nvm
 source ~/.nvm/nvm.sh
+
+export PATH="~/tmp/phantomjs/phantomjs-1.9.0-linux-x86_64/bin:$PATH" 
