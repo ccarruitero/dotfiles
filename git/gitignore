@@ -41,3 +41,4 @@ Thumbs.db
 b2g-*
 *.swp
 env
+node_modules
