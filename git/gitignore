@@ -42,3 +42,4 @@ b2g-*
 *.swp
 env
 node_modules
+mysql2psql.yml
