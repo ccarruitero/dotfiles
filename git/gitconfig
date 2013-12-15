@@ -4,5 +4,5 @@
 [color]
   ui = auto
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /home/wat/.gitignore
   editor = vim
