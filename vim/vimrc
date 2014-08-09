@@ -9,6 +9,7 @@ set showcmd " Display incomplete commands.
 set showmode " Display the mode you're in.
 
 set smartindent
+set autoindent
 
 set colorcolumn=80
 
