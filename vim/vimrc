@@ -1,7 +1,3 @@
-set ruler
-set number
-set title
-
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -15,6 +11,18 @@ set showmode " Display the mode you're in.
 set smartindent
 
 set colorcolumn=80
+
+
+" color
+if has('unix')
+  syntax on
+endif
+
+set ruler
+set number
+set cursorline
+set title
+set hlsearch
 
 " Remember cursor position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -34,3 +42,9 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
+
+" jsx
+let g:jsx_ext_required = 0
+
+" js
+let g:javascript_enable_domhtmlcss = 1

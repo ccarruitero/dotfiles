@@ -15,3 +15,4 @@ install-git:
 	rm -f ~/.gitignore
 	ln -s `pwd`/git/gitignore ~/.gitignore
 	git config --global core.excludesfile ~/.gitignore
+	git submodule update --init --recursive
