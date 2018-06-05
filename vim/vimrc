@@ -1,7 +1,4 @@
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set smarttab
+"set smarttab
 set paste
 set runtimepath^=~/.vim/bundle/ctrlp.vim " ctrlp
 
@@ -10,9 +7,11 @@ set showmode " Display the mode you're in.
 
 set smartindent
 set autoindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 set colorcolumn=80
-
 
 " color
 if has('unix')
