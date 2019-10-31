@@ -1,8 +1,8 @@
 [user]
-  name = Cesar Carruitero
-  email = cesar@mozilla.pe
+  name = César Carruitero
+  email = ccarruitero@protonmail.com
 [color]
   ui = auto
 [core]
-	excludesfile = /home/wat/.gitignore
+  excludesfile = /home/wat/.gitignore
   editor = vim
