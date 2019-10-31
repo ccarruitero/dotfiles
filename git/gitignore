@@ -44,3 +44,9 @@ env
 node_modules
 bower_components
 mysql2psql.yml
+
+package-lock.json
+.env
+*.wasm
+Cargo.lock
+yarn.lock
