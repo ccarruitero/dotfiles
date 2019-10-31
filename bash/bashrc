@@ -157,3 +157,13 @@ export PATH="~/tmp/phantomjs/phantomjs-1.9.0-linux-x86_64/bin:$PATH"
 
 # mongo
 export PATH="~/mongodb/bin:$PATH"
+
+# geckodriver
+export PATH="~/Downloads/geckodriver/bin:$PATH"
+
+# cargo
+export PATH="$HOME/.cargo/bin"
+
+# Wasmer
+export WASMER_DIR="/home/pavle/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
