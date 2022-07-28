@@ -41,7 +41,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
-au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 
 " jsx
 let g:jsx_ext_required = 0
