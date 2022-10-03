@@ -1,6 +1,5 @@
 "set smarttab
 set paste
-set runtimepath^=~/.vim/bundle/ctrlp.vim " ctrlp
 
 set showcmd " Display incomplete commands.
 set showmode " Display the mode you're in.
@@ -32,21 +31,25 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 au BufEnter,BufRead *.py set tw=78 ts=4 sw=4 sta et sts=4 ai
 au BufEnter,BufRead *.py let python_highlight_all = 1
 
-call pathogen#infect()
+call plug#begin()
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'pangloss/vim-javascript'
+Plug 'klen/python-mode'
+Plug 'davidhalter/jedi-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'altercation/solarized'
+call plug#end()
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType c set omnifunc=ccomplete#Complete
+set runtimepath^=~/.vim/bundle/ctrlp.vim " ctrlp
 
 " jsx
 let g:jsx_ext_required = 0
 
 " js
 let g:javascript_enable_domhtmlcss = 1
+let g:javascript_plugin_flow = 1
 
 " rust
 au BufEnter,BufRead *.rs set tw=78 ts=4 sw=4 sta et sts=4 ai
